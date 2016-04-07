@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lens</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="scripts/caman.full.min.js"></script>
+</head>
+<body>
+	<template id="photo-template">
+		<div class="photo">
+			<img />
+		</div>
+	</template>
+	<div id="select_folder">
+		<span>Select a folder containing photos</span>
+	</div>
+	<div id="photos"></div>
+	<div id="fullViewPhoto">
+		<img id="image"/>
+		<div id="toolbar">
+			<div id="applyFilter" class="button" onclick="applyFilter();">Apply Filter</div>
+			<div id="back" class="button" onclick="backToGridView()">Back</div>
+		</div>
+	</div>
+</body>
+<input type="file" nwdirectory id="folderSelector"></input>
+</html>
